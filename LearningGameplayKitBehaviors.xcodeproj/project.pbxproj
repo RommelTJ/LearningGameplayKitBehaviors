@@ -21,6 +21,7 @@
 		B020D1151F9B854400AB013C /* Missile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D1141F9B854400AB013C /* Missile.swift */; };
 		B020D1171F9B85AC00AB013C /* TargetingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D1161F9B85AC00AB013C /* TargetingComponent.swift */; };
 		B020D1191F9B85DB00AB013C /* RenderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D1181F9B85DB00AB013C /* RenderComponent.swift */; };
+		B020D11B1F9B89AB00AB013C /* MissileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D11A1F9B89AB00AB013C /* MissileNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B020D1141F9B854400AB013C /* Missile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missile.swift; sourceTree = "<group>"; };
 		B020D1161F9B85AC00AB013C /* TargetingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetingComponent.swift; sourceTree = "<group>"; };
 		B020D1181F9B85DB00AB013C /* RenderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderComponent.swift; sourceTree = "<group>"; };
+		B020D11A1F9B89AB00AB013C /* MissileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissileNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B020D1101F9B848800AB013C /* EntityNode.swift */,
+				B020D11A1F9B89AB00AB013C /* MissileNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B020D11B1F9B89AB00AB013C /* MissileNode.swift in Sources */,
 				B020D0FA1F9B068E00AB013C /* GameScene.swift in Sources */,
 				B020D0FC1F9B068E00AB013C /* GameViewController.swift in Sources */,
 				B020D1151F9B854400AB013C /* Missile.swift in Sources */,
