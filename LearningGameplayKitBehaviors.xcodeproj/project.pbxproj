@@ -15,6 +15,12 @@
 		B020D0FF1F9B068E00AB013C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B020D0FD1F9B068E00AB013C /* Main.storyboard */; };
 		B020D1011F9B068E00AB013C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B020D1001F9B068E00AB013C /* Assets.xcassets */; };
 		B020D1041F9B068E00AB013C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B020D1021F9B068E00AB013C /* LaunchScreen.storyboard */; };
+		B020D10D1F9B841500AB013C /* NodeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D10C1F9B841500AB013C /* NodeEntity.swift */; };
+		B020D1111F9B848800AB013C /* EntityNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D1101F9B848800AB013C /* EntityNode.swift */; };
+		B020D1131F9B852200AB013C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D1121F9B852200AB013C /* Player.swift */; };
+		B020D1151F9B854400AB013C /* Missile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D1141F9B854400AB013C /* Missile.swift */; };
+		B020D1171F9B85AC00AB013C /* TargetingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D1161F9B85AC00AB013C /* TargetingComponent.swift */; };
+		B020D1191F9B85DB00AB013C /* RenderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D1181F9B85DB00AB013C /* RenderComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		B020D1001F9B068E00AB013C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B020D1031F9B068E00AB013C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B020D1051F9B068E00AB013C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B020D10C1F9B841500AB013C /* NodeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeEntity.swift; sourceTree = "<group>"; };
+		B020D1101F9B848800AB013C /* EntityNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityNode.swift; sourceTree = "<group>"; };
+		B020D1121F9B852200AB013C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B020D1141F9B854400AB013C /* Missile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missile.swift; sourceTree = "<group>"; };
+		B020D1161F9B85AC00AB013C /* TargetingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetingComponent.swift; sourceTree = "<group>"; };
+		B020D1181F9B85DB00AB013C /* RenderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,9 @@
 		B020D0F21F9B068E00AB013C /* LearningGameplayKitBehaviors */ = {
 			isa = PBXGroup;
 			children = (
+				B020D10F1F9B846800AB013C /* Components */,
+				B020D10E1F9B846000AB013C /* Nodes */,
+				B020D10B1F9B83C600AB013C /* Entities */,
 				B020D0F31F9B068E00AB013C /* AppDelegate.swift */,
 				B020D0F51F9B068E00AB013C /* GameScene.sks */,
 				B020D0F71F9B068E00AB013C /* Actions.sks */,
@@ -71,6 +86,33 @@
 				B020D1051F9B068E00AB013C /* Info.plist */,
 			);
 			path = LearningGameplayKitBehaviors;
+			sourceTree = "<group>";
+		};
+		B020D10B1F9B83C600AB013C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B020D10C1F9B841500AB013C /* NodeEntity.swift */,
+				B020D1121F9B852200AB013C /* Player.swift */,
+				B020D1141F9B854400AB013C /* Missile.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B020D10E1F9B846000AB013C /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				B020D1101F9B848800AB013C /* EntityNode.swift */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		B020D10F1F9B846800AB013C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B020D1161F9B85AC00AB013C /* TargetingComponent.swift */,
+				B020D1181F9B85DB00AB013C /* RenderComponent.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +191,13 @@
 			files = (
 				B020D0FA1F9B068E00AB013C /* GameScene.swift in Sources */,
 				B020D0FC1F9B068E00AB013C /* GameViewController.swift in Sources */,
+				B020D1151F9B854400AB013C /* Missile.swift in Sources */,
+				B020D1171F9B85AC00AB013C /* TargetingComponent.swift in Sources */,
+				B020D10D1F9B841500AB013C /* NodeEntity.swift in Sources */,
 				B020D0F41F9B068E00AB013C /* AppDelegate.swift in Sources */,
+				B020D1131F9B852200AB013C /* Player.swift in Sources */,
+				B020D1111F9B848800AB013C /* EntityNode.swift in Sources */,
+				B020D1191F9B85DB00AB013C /* RenderComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
