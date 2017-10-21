@@ -12,7 +12,7 @@ class NodeEntity: GKEntity {
 
     var node: EntityNode {
         get {
-            return componentForClass(RenderComponent.self)!.node
+            return component(ofType: RenderComponent.self)!.node
         }
     }
     
