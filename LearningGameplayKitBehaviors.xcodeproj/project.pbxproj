@@ -24,6 +24,8 @@
 		B020D11B1F9B89AB00AB013C /* MissileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D11A1F9B89AB00AB013C /* MissileNode.swift */; };
 		B020D11D1F9B8EC000AB013C /* PlayerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B020D11C1F9B8EC000AB013C /* PlayerNode.swift */; };
 		B020D11F1F9B989900AB013C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = B020D11E1F9B989900AB013C /* spark.png */; };
+		B020D1221F9B98EC00AB013C /* MissileSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = B020D1201F9B98EC00AB013C /* MissileSmoke.sks */; };
+		B020D1231F9B98EC00AB013C /* MissileFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = B020D1211F9B98EC00AB013C /* MissileFire.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		B020D11A1F9B89AB00AB013C /* MissileNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissileNode.swift; sourceTree = "<group>"; };
 		B020D11C1F9B8EC000AB013C /* PlayerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNode.swift; sourceTree = "<group>"; };
 		B020D11E1F9B989900AB013C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		B020D1201F9B98EC00AB013C /* MissileSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MissileSmoke.sks; sourceTree = "<group>"; };
+		B020D1211F9B98EC00AB013C /* MissileFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MissileFire.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 		B020D10E1F9B846000AB013C /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				B020D1211F9B98EC00AB013C /* MissileFire.sks */,
+				B020D1201F9B98EC00AB013C /* MissileSmoke.sks */,
 				B020D1101F9B848800AB013C /* EntityNode.swift */,
 				B020D11A1F9B89AB00AB013C /* MissileNode.swift */,
 				B020D11C1F9B8EC000AB013C /* PlayerNode.swift */,
@@ -185,9 +191,11 @@
 			files = (
 				B020D0FF1F9B068E00AB013C /* Main.storyboard in Resources */,
 				B020D11F1F9B989900AB013C /* spark.png in Resources */,
+				B020D1231F9B98EC00AB013C /* MissileFire.sks in Resources */,
 				B020D0F61F9B068E00AB013C /* GameScene.sks in Resources */,
 				B020D1011F9B068E00AB013C /* Assets.xcassets in Resources */,
 				B020D1041F9B068E00AB013C /* LaunchScreen.storyboard in Resources */,
+				B020D1221F9B98EC00AB013C /* MissileSmoke.sks in Resources */,
 				B020D0F81F9B068E00AB013C /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
