@@ -25,6 +25,10 @@ class Missile: NodeEntity, GKAgentDelegate {
         addComponent(targetingComponent)
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func setupEmitters(withTargetScene scene:SKScene) {
         missileNode.setupEmitters(withTargetScene: scene)
     }

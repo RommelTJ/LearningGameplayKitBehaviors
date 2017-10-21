@@ -23,13 +23,17 @@ class Player: NodeEntity, GKAgentDelegate {
         addComponent(agent)
     }
     
-    func agentDidUpdate(agent: GKAgent) {
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func agentDidUpdate(_ agent: GKAgent) {
         if let agent2d = agent as? GKAgent2D {
             node.position = CGPoint(x: CGFloat(agent2d.position.x), y: CGFloat(agent2d.position.y))
         }
     }
     
-    func agentWillUpdate(agent: GKAgent) {
+    func agentWillUpdate(_ agent: GKAgent) {
         if let agent2d = agent as? GKAgent2D {
             agent2d.position = float2(Float(node.position.x), Float(node.position.y))
         }
