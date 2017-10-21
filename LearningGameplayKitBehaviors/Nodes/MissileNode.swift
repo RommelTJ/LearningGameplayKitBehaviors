@@ -17,7 +17,6 @@ class MissileNode: EntityNode {
         self.addChild(smoke)
         
         let fire = NSKeyedUnarchiver.unarchiveObject(withFile: Bundle.main.path(forResource: "MissileFire", ofType: "sks")!) as! SKEmitterNode
-        NSKeyedUnarchiver.unarchiveObjectWithFile(NSBundle.mainBundle().pathForResource("MissileFire", ofType:"sks")!) as! SKEmitterNode
         fire.targetNode = scene
         self.addChild(fire)
     }
