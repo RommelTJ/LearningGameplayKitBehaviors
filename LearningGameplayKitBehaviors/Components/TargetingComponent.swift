@@ -10,6 +10,21 @@ import GameKit
 
 class TargetingComponent: GKAgent2D {
     
-    // TODO
+    let target:GKAgent2D
+    
+    required init(withTargetAgent targetAgent:GKAgent2D) {
+        
+        target = targetAgent
+        
+        super.init()
+        
+        let seek = GKGoal(toSeekAgent: targetAgent)
+        
+        self.behavior = GKBehavior(goals: [seek], andWeights: [1])
+        
+        self.maxSpeed = 4000
+        self.maxAcceleration = 4000
+        self.mass = 0.4
+    }
 
 }

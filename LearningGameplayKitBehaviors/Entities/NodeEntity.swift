@@ -10,6 +10,10 @@ import GameKit
 
 class NodeEntity: GKEntity {
 
-    // TODO
+    var node: EntityNode {
+        get {
+            return componentForClass(RenderComponent.self)!.node
+        }
+    }
     
 }
